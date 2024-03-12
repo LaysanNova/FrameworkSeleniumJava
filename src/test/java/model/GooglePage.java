@@ -14,7 +14,6 @@ public class GooglePage extends BasePage{
 
     public GooglePage(WebDriver driver) {
         super(driver);
-        PageFactory.initElements(driver, this);
     }
 
     public List<String> getTable() {

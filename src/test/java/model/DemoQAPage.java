@@ -19,7 +19,6 @@ public class DemoQAPage extends BasePage {
 
     public DemoQAPage(WebDriver driver) {
         super(driver);
-        PageFactory.initElements(driver, this);
     }
 
     public List<String> getHeader() {
