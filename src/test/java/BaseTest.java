@@ -9,11 +9,11 @@ import java.time.Duration;
 public abstract class BaseTest {
 
     private WebDriver driver;
-    protected WebDriver getDriver() { return driver; };
+    protected WebDriver getDriver() { return driver; }
 
     protected void navigateWeb(String link) {
         driver.get(link);
-    };
+    }
 
     @BeforeMethod
     protected void beforeTest(Method method) {
@@ -24,7 +24,7 @@ public abstract class BaseTest {
 
         if (method.getName().contains("google")) {
             navigateWeb(TestData.GOOGLE);
-        } else if (method.getName().contains("demo")) {
+        } else  if (method.getName().contains("demo")) {
             navigateWeb(TestData.DEMO_QA);
         }
 
